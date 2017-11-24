@@ -1,0 +1,158 @@
+/* header */
+*{
+	font-size: 12px;
+}
+.store .headerUl img {
+	float: left;
+	margin: 23px 8% 0 8%;
+}
+.store .headerUl {
+	height: 74px;
+	background-color: #f7f7f7;
+	line-height: 74px;
+} 
+.store .headerUl ul {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.store .headerUl li {
+	text-align: center;
+	width: 30%;
+	height: 70px;
+	font-size: 16px;
+	color: #6f6f6f
+}
+.store .headerUl .checked {
+	color: #ff8600;
+	border-bottom: 3px solid #ff8600;
+}
+/* article */
+.store .article {
+	display: none;
+	width: 100%;
+}
+.store .selected {
+	display: inline-block;
+}
+.store .first,.five {
+	display: flex;
+	flex-flow: row nowrap;	
+	width: 90%;
+	margin: 20px 5px 10px 35px;	
+}
+.store .one {
+	width: 65%;
+	transform: rotate(4deg)
+}
+.store .one img {
+	height: 80%;
+	width: 100%;
+	box-shadow: 0 5px 5px #ccc
+	
+}
+.store .one p {
+	text-align: center;
+	margin-top: 10px;
+}
+.store .two {
+	margin-top: 20px;
+	margin-left: 5%;
+	width: 35%;
+}
+
+.store .two li {
+	margin-top: 10px;
+}
+@media screen and (min-width:320px) and (max-width:380px) {
+    .one p,.two li {
+		font-size: 12px;
+	}
+}
+@media screen and (min-width:381px) and (max-width:440px) {
+    .one p,.two li {
+		font-size: 14px;
+	}
+}
+@media screen and (min-width:441px) and (max-width:500px) {
+    .one p,.two li {
+		font-size: 16px;
+	}
+}
+@media screen and (min-width:501px) and (max-width:560px) {
+    .one p,.two li {
+		font-size: 18px;
+	}
+}
+@media screen and (min-width:561px) and (max-width:640px) {
+    .one p,.two li {
+		font-size: 20px;
+	}
+}
+.store .second img {
+	width: 90%;
+	margin: 10px 5%
+}
+
+.store .three {
+	text-align: center;
+
+}
+.store .four {
+	margin: 10px 5% 0 5%;
+	width: 90%;
+	
+}
+/* footer */
+.store .six {
+	width:90%;
+	margin: 10px 5%;
+	border-bottom: 2px solid #454545;
+	overflow: hidden ;
+	position: relative
+}
+
+.store .six span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #052e79;
+	font-size: 18px;
+	color: #c5deea;
+}
+.store .six img {
+	float: right;
+	margin-right: 3%;
+	width: 15%; 
+}
+.store .footer {
+	position: relative;
+}
+.store .content {
+	width: 92%;
+	margin: 10px 4%;
+	text-align: center
+}
+
+.store .content img {
+	margin-top: 10px;
+	width: 100%
+}
+ .store .bottom {
+	position: absolute;
+	top: 95%;
+	width: 100%;
+	background-color: #eb5717;
+	height: 45px;
+} 
+.store .bottom img {
+	float: left;
+	margin: 12px 3% 0 35%;
+	width: 30px;
+	height: 30px;
+} 
+.store .bottom span {
+	color: #ffffff;
+	font-size: 14px;
+	float: left;
+	line-height: 45px;
+} 

@@ -1,0 +1,23 @@
+
+.header {
+	height: 74px;
+	background-color: #f7f7f7;
+	line-height: 74px;
+    overflow: hidden;
+    text-align: center
+} 
+* {margin: 0; padding: 0; font-family: "微软雅黑"; }
+.left,.right {width: 100%; height: 700px; box-sizing: border-box; }
+.container {width: 100%; height: 100%; float: left; }
+.des {float: right; width: 48%; height: 100%; border: 1px dashed #000; box-sizing: border-box; }
+.info {margin-top: 20px; padding-left: 20px; color: #cc5522; font-size: 20px; margin-bottom: 40px; text-align: center; }
+pre {font-family: "微软雅黑";font-size: 14px;}
+.title {font-size: 14px; font-weight: bold; color: #cc5522; }
+.content {font-size: 13px; color: #333; margin-top: 6px; }
+#bottom{height: 4.2rem;width: 100%; background: white;position: fixed;bottom: 0px;}
+#bottom div:first-child{width: 30%;}
+#bottom div:first-child img{float: left;width: 3rem;margin-top: 10px;}
+#bottom div:nth-child(2){display: inline-block;float: left; margin-top: 5px;margin-left: 5px;}
+#bottom div:nth-child(2) p{margin-top: 5px;}
+#bottom div:nth-child(3){float: right;}
+#bottom div:nth-child(3) img{width: 80%;float: right;}

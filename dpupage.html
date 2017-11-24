@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta content="width=device-width,minimum-scale=1.0,maxmum-scale=1.0" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-setetion">
+	<title>本地生活</title>
+    <link rel="stylesheet" type="text/css" href="./css/my.css" />
+	<link rel="stylesheet" type="text/css" href="./css/dpupage.css" />
+	
+	<script>
+		window.onload=function(){
+			var uls=document.getElementsByClassName('ul1')[0];
+			var divs=document.getElementsByClassName('article');
+			var lis=uls.children;
+			for(var i=0;i<lis.length;i++){
+				lis[i].onclick=(function(num){
+					return function(){
+						Array.prototype.slice.call(lis,0).forEach(function(item){
+							item.className="";
+						});
+						lis[num].className="checked";
+						Array.prototype.slice.call(divs,0).forEach(function(item){
+							item.className="article";
+						});
+						divs[num].className="article selected";
+						
+					}
+				})(i);
+			}
+		}</script>
+</head>
+<body>
+    <div class="store">
+		<div class="headerUl">
+			<img src="./images/store_1.png" alt="" onclick="history.back()">
+			<ul  class="ul1">
+			<li class="checked">商品</li>
+			<li>详情</li>
+			<li>参数</li>
+			</ul>
+		</div>
+		<!-- 商品 -->
+		<div class="article selected">
+			<div class="first">
+				<div class="one">
+					<img src="./images/store_one.png" alt="">
+					<p>昆山市青阳路</p>
+				</div>
+				<div class="two">
+					<ul>
+						<li>感恩一路有你</li>
+						<li>关注健康</li>
+						<li>与爱同行</li>
+					</ul>
+				</div>
+			</div>
+			<div class="second">	
+				 <img src="./images/store_0.jpg" alt="">	
+			</div>
+			
+			<img class="four" src="./images/store_4.png" alt="">
+			<div class="five">
+				<div class="one">
+					<img src="./images/store_one.png" alt="">
+					<p>昆山市青阳路</p>
+				</div>
+				<div class="two">
+					<ul>
+						<li>感恩一路有你</li>
+						<li>关注健康</li>
+						<li>让爱相伴</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+		<!-- 详情 -->
+		<div class="article">
+			<div class="first">
+				<div class="one">
+					<img src="./images/store_4.png" alt="">
+					<p>昆山市青阳路</p>
+				</div>
+				<div class="two">
+					<ul>
+						<li>感恩一路有你</li>
+						<li>关注健康</li>
+						<li>让爱相伴</li>
+					</ul>
+				</div>
+			</div>
+			<div class="second">	
+				 <img src="./images/store_0.jpg" alt="">	
+			</div>
+			
+			<img class="four" src="./images/store_4.png" alt="">
+			<div class="five">
+				<div class="one">
+					<img src="./images/store_one.png" alt="">
+					<p>昆山市青阳路</p>
+				</div>
+				<div class="two">
+					<ul>
+						<li>感恩一路有你</li>
+						<li>关注健康</li>
+						<li>让爱相伴</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+		<!-- 参数 -->
+		<div class="article">
+			<div class="first">
+				<div class="one">
+					<img src="./images/store_one.png" alt="">
+					<p>昆山市青阳路</p>
+				</div>
+				<div class="two">
+					<ul>
+						<li>感恩一路有你</li>
+						<li>关注健康</li>
+						<li>让爱相伴</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+			<img class="four" src="./images/store_4.png" alt="">
+			<div class="second">	
+				 <img src="./images/store_0.jpg" alt="">	
+			</div>
+			<div class="five">
+				<div class="one">
+					<img src="./images/store_one.png" alt="">
+					<p>昆山市青阳路</p>
+				</div>
+				<div class="two">
+					<ul>
+						<li>感恩一路有你</li>
+						<li>关注健康</li>
+						<li>与爱同行</li>
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+		<div class="footer">
+			<div class="six">	
+				<span>服务项目</span>
+				<img src="./images/store_5.png" alt="">  				
+			</div>
+			<div class="content">
+				<span>成人基础体检套餐</span>
+				<img src="./images/store_6.png" alt="">
+				
+			</div>
+			<div class="bottom">
+				<img src="./images/store_7.png" alt="">
+				<span>立即预约</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

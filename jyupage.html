@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta content="width=device-width,minimum-scale=1.0,maxmum-scale=1.0" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta content="telephone=no" name="format-setetion">
+	<title>本地生活</title>
+    <link rel="stylesheet" type="text/css" href="./css/my.css" />
+	<link rel="stylesheet" type="text/css" href="./css/jyupage.css" />
+	<link rel="stylesheet" href="fonts/iconfont.css">
+    <link rel="stylesheet" href="css/foxui.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/swiper.min.js"></script>
+	<script src="js/foxui.min.js"></script>
+	<script>
+		window.onload=function(){
+			var uls=document.getElementsByClassName('ul1')[0];
+			var divs=document.getElementsByClassName('article');
+			var lis=uls.children;
+			for(var i=0;i<lis.length;i++){
+				lis[i].onclick=(function(num){
+					return function(){
+						Array.prototype.slice.call(lis,0).forEach(function(item){
+							item.className="";
+						});
+						lis[num].className="checked";
+						Array.prototype.slice.call(divs,0).forEach(function(item){
+							item.className="article";
+						});
+						divs[num].className="article checked";
+						
+					}
+				})(i);
+			}
+		}
+	</script>
+</head>
+<body>
+    <div class="edu">
+		<div class="headerUl">
+			<img src="./images/back.png" alt="" onclick="history.back()">
+			<ul class="ul1">
+				<li class="checked">商品</li>
+				<li>详情</li>
+				<li>参数</li>
+			</ul>
+		</div>
+		<div class="article checked">
+			<div class="spanOne">
+				BAIGE
+			</div>
+			<div class="spanTwo">
+				童星经济
+			</div>
+			<img class="imgOne" src="./images/header.png" alt="">
+			<div class="ulOne">
+				<p>
+					<span>商家位置</span>
+				</p>
+				<ul>
+					<li>
+						<a href="">白鸽工作室 </a><a href="">BAIGE</a>
+					</li>
+					<li>
+						<b>地址: </b><span>江苏昆山</span>	
+					</li>
+					<li>
+						<b>电话: </b><span>123456789088</span>
+					</li>
+				</ul>
+			</div>
+			<!-- two -->
+			<div class="ulTwo">
+				<p>
+					<span>购买介绍</span>
+				</p>
+				<ul>
+					
+					<li>
+						<b>有效期: </b><span>2017-9-20至2018-9-20(周末、法定假日通用)</span>	
+					</li>
+					<li>
+						<b>使用人数: </b><span>每张限一人使用</span>
+					</li>
+					<li>
+						<b>预约信息: </b><span>请您提前一周预约</span>
+					</li>
+					<li>
+						<b>预约电话: </b><span>王老师1377723232</span>
+					</li>
+					<li>
+						<b>商家服务: </b><span>免费WiFi，免费提供储物柜</span>
+					</li>
+					<li>
+						<b>课程信息: </b><span>音乐鉴赏，形体矫正，台步训练</span>
+					</li>
+					<li>
+						<b>温馨提示: </b><span>培训上课时间由白鸽童星经济工作室安排</span>
+					</li>
+				</ul>
+			</div>
+			<!-- three -->
+			<div class="ulThree">
+				<p>
+					<span>产品介绍</span>
+					<img src="./images/imgContent.png" alt="" class="imgContent">
+				</p>
+				<div class="inner">
+					<img src="./images/imgLeft.png" alt="" class="imgLeft">
+					<div class="content">
+						<h3>学的是形体，练的是自信</h3>
+						<ul>
+							<li>让孩子永远站在舞台中央</li>
+							<li>人群中间 聚光灯下</li>
+							<li>欢呼声中。。。。。。</li>
+							<li>孩子的自信要油然而生</li>
+							<li>要自信confident</li>
+							<li>放入白鸽</li>
+						</ul>
+					</div>
+					<img src="./images/imgRight.png" alt="" class="imgRight">
+				</div>
+			</div>
+			<img src="./images/footer.png" alt="" class="imgFooter">
+		</div>
+		<!-- 选项卡2详情部分 -->
+		<div class="article">
+			<div class="spanOne">
+				BAIGE
+			</div>
+			<div class="spanTwo">
+				童星经济
+			</div>
+			<img class="imgOne" src="./images/header.png" alt="">
+			
+			
+			<!-- one -->
+			<div class="ulTwo">
+				<p>
+					<span>购买介绍</span>
+				</p>
+				<ul>
+					
+					<li>
+						<b>有效期: </b><span>2017-9-20至2018-9-20(周末、法定假日通用)</span>	
+					</li>
+					<li>
+						<b>使用人数: </b><span>每张限一人使用</span>
+					</li>
+					<li>
+						<b>预约信息: </b><span>请您提前一周预约</span>
+					</li>
+					<li>
+						<b>预约电话: </b><span>王老师1377723232</span>
+					</li>
+					<li>
+						<b>商家服务: </b><span>免费WiFi，免费提供储物柜</span>
+					</li>
+					<li>
+						<b>课程信息: </b><span>音乐鉴赏，形体矫正，台步训练</span>
+					</li>
+					<li>
+						<b>温馨提示: </b><span>培训上课时间由白鸽童星经济工作室安排</span>
+					</li>
+				</ul>
+			</div>
+			<!-- two -->
+			<div class="ulThree">
+				<p>
+					<span>产品介绍</span>
+					<img src="./images/imgContent.png" alt="" class="imgContent">
+				</p>
+				<div class="inner">
+					<img src="./images/imgLeft.png" alt="" class="imgLeft">
+					<div class="content">
+						<h3>学的是形体，练的是自信</h3>
+						<ul>
+							<li>让孩子永远站在舞台中央</li>
+							<li>人群中间 聚光灯下</li>
+							<li>欢呼声中。。。。。。</li>
+							<li>孩子的自信要油然而生</li>
+							<li>要自信confident</li>
+							<li>放入白鸽</li>
+						</ul>
+					</div>
+					<img src="./images/imgRight.png" alt="" class="imgRight">
+				</div>
+			</div>
+			<!-- three -->
+			<div class="ulOne">
+				<p>
+					<span>商家位置</span>
+				</p>
+				<ul>
+					<li>
+						<a href="">白鸽工作室 </a><a href="">BAIGE</a>
+					</li>
+					<li>
+						<b>地址: </b><span>江苏昆山</span>	
+					</li>
+					<li>
+						<b>电话: </b><span>123456789088</span>
+					</li>
+				</ul>
+			</div>
+			<!-- four -->
+			<div class="ulThree">
+				<p>
+					<span>产品介绍</span>
+					<img src="./images/imgContent.png" alt="" class="imgContent">
+				</p>
+				<div class="inner">
+					<img src="./images/imgLeft.png" alt="" class="imgLeft">
+					<div class="content">
+						<h3>学的是形体，练的是自信</h3>
+						<ul>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+							
+						</ul>
+					</div>
+					<img src="./images/imgRight.png" alt="" class="imgRight">
+				</div>
+			</div>
+			<img src="./images/footer.png" alt="" class="imgFooter">
+		</div>
+		<!-- 选项卡参数部分 -->
+		<div class="article">
+			<div class="spanOne">
+				BAIGE
+			</div>
+			<div class="spanTwo">
+				童星经济
+			</div>
+			<img class="imgOne" src="./images/footer.png" alt="">
+			<div class="ulOne">
+				<p>
+					<span>商家位置</span>
+				</p>
+				<ul>
+					<li>
+						<a href="">白鸽工作室</a><a href="">BAIGE</a>
+					</li>
+					<li>
+						<b>地址:</b><span></span>	
+					</li>
+					<li>
+						<b>电话:</b><span></span>
+					</li>
+				</ul>
+			</div>
+			<!-- two -->
+			<div class="ulTwo">
+				<p>
+					<span>产品参数</span>
+				</p>
+				<ul>
+					
+					<li>
+						<b>有效期: </b><span>2017-9-20至2018-9-20(周末、法定假日通用)</span>	
+					</li>
+					<li>
+						<b>使用人数: </b><span>每张限一人使用</span>
+					</li>
+					<li>
+						<b>课程信息: </b><span>音乐鉴赏，形体矫正，台步训练</span>
+					</li>
+					<li>
+						<b>温馨提示: </b><span>培训上课时间由白鸽童星经济工作室安排</span>
+					</li>
+				</ul>
+			</div>
+			<!-- three -->
+			<div class="ulThree">
+				<p>
+					<span>商家位置</span>
+					<img src="./images/imgContent.png" alt="" class="imgContent">
+				</p>
+				<div class="inner">
+					<img src="./images/imgLeft.png" alt="" class="imgLeft">
+					<div class="content">
+						<h3>学的是形体，练的是自信</h3>
+						<ul>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+							<li>让孩子永远站在舞台中央</li>
+						</ul>
+					</div>
+					<img src="./images/imgRight.png" alt="" class="imgRight">
+				</div>
+			</div>
+			<img src="./images/header.png" alt="" class="imgFooter">
+		</div>
+		<div class="fui-navbar">
+
+			<a href="dpupage.html" class="external nav-item">
+				<span class="icon icon-like"></span>
+				<span class="label">关注</span>
+			</a>
+
+			<a href="ylpage.html" class="external nav-item " id="menucart">
+				<span class="icon icon-shop"></span>
+				<span class="label">店铺</span>
+					</a>
+			<a href="map.html" class="external nav-item  ">
+				<span class="icon icon-address"></span>
+				<span class="label">到店</span>
+			</a>
+
+			<!-- <a href="./index.php?i=5&amp;c=entry&amp;m=ewei_shopv2&amp;do=mobile" class="external nav-item">
+				<span class="icon icon-back"></span>
+				<span class="label">返回商城</span>
+			</a> -->
+		</div>
+	</div>
+</body>
+</html>
